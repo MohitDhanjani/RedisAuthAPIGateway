@@ -1,6 +1,6 @@
 # RedisAuthAPIGateway
 
-**A AWS Lambda function for API Gateway authentication with Redis using Custom Authorizer feature. Written in Node with Promises.**
+**AWS Lambda function for API Gateway authentication with Redis using Custom Authorizer feature. Written in JavaScript (Node.js) with Promises.**
 
 ## What is it for?
 If are using...
