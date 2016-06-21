@@ -1,0 +1,24 @@
+{
+  "name": "redisauthapigateway",
+  "version": "1.0.0",
+  "description": "AWS Lambda function for API Gateway authentication with Redis using Custom Authorizer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lambda",
+    "authentication",
+    "redis",
+    "api",
+    "gateway",
+    "custom",
+    "authorizer"
+  ],
+  "author": "Mohit R. Dhanjani",
+  "url" : "https://github.com/MohitDhanjani/RedisAuthAPIGateway",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "redis": "^2.6.2"
+  }
+}
