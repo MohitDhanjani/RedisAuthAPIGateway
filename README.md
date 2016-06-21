@@ -1,6 +1,6 @@
 # RedisAuthAPIGateway
 
-**What is it for?
+## What is it for?
 If are using... 
 1. API Gateway's Custom Authorizer.
 2. Redis to store the access Token of users as Key.
@@ -11,7 +11,7 @@ This Lambda function will quickly let you configure your Redis as authentication
 
 1. Download zip or clone this repo. Go to directory and run `npm install` to install all modules.
 2. Open `index.js` file and change the value of REDIS_PORT, REDIS_HOST and REDIS_PASSWORD to your particular Redis configuration.
-3. Change the policyDocument variable's value to the policy document according to you.
+3. Change the `policyDocument` variable's value to the policy document according to you.
 4. Zip the contents of the folder. **NOT the folder itself**.
 5. Upload it on AWS Lambda. Default settings will do. Handler name **need** to be `index.handler`. Config your API Gateway to use the function.
 
@@ -26,3 +26,7 @@ I cannot be sure. I was experimenting with different login approaches for my new
 But it surely is fast (not faster than JWT - JSON Web Tokens, though). It is faster than AWS DynamoDB in first run and also faster in fetching the items subsequent times. (Given that DynamoDB and Redis are hosted in same region as the Lambda function).
 
 NOTE - Redis didn't work for me. Currently I am experimenting with Auth0 and its JWT system. JWT is super fast, secure, scalable, and cost effective solution. But experiments go on!
+
+### Feedback/Bugs
+
+If you have any feedback regarding this approach or have come accross any issues or bugs. Please file them in Issue tracker.
