@@ -1,7 +1,8 @@
 # RedisAuthAPIGateway
 
 ## What is it for?
-If are using... 
+If are using...
+
 1. API Gateway's Custom Authorizer.
 2. Redis to store the access Token of users as Key.
 
