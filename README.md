@@ -1,5 +1,7 @@
 # RedisAuthAPIGateway
 
+**A AWS Lambda function for API Gateway authentication with Redis using Custom Authorizer feature. Written in Node with Promises.**
+
 ## What is it for?
 If are using...
 
@@ -20,6 +22,8 @@ This Lambda function will quickly let you configure your Redis as authentication
 
 Tokens are used for authenticating the users. Sent in the Authorization header, if you happen to be storing those Tokens as Key in your Redis and the user ID/details as values to make things fast, and you want to secure your API via this, then this function can help.
 This function will help you secure your API hosted on API Gateway via its Custom Authorizer feature and your Redis authentication layer.
+
+Originally based on *lambda-auth0-authorizer* project by [Jason Haines](https://github.com/jghaines), it is now entirely rewritten, but some code from that project is still being used, like for Token validation.
 
 ## Is this approach secure?
 
